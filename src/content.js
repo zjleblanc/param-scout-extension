@@ -10,10 +10,11 @@ const SHADOW_CSS = `
     --border: #e2e2e2;
     --text: #111111;
     --text-muted: #6b7280;
-    --accent: #6b3492;
+    --accent: #c4622d;
     --accent-fg: #ffffff;
-    --badge-bg: #f3eaf9;
-    --badge-text: #6b3492;
+    --accent-green: #2b5219;
+    --badge-bg: #fdeee6;
+    --badge-text: #c4622d;
     --copy-bg: #f3f4f6;
     --copy-hover: #e5e7eb;
     --copy-success: #d1fae5;
@@ -28,16 +29,17 @@ const SHADOW_CSS = `
 
   @media (prefers-color-scheme: dark) {
     :host {
-      --bg: #1a1a2e;
-      --surface: #16213e;
-      --border: #2d2d4e;
-      --text: #e8e8f0;
+      --bg: #1c1c1c;
+      --surface: #262626;
+      --border: #363636;
+      --text: #eeeeee;
       --text-muted: #9ca3af;
-      --accent: #c084fc;
-      --badge-bg: #2e1d40;
-      --badge-text: #e2c4f5;
-      --copy-bg: #2d2d4e;
-      --copy-hover: #3d3d5e;
+      --accent: #e8893a;
+      --accent-green: #7abf5a;
+      --badge-bg: #3a1f0a;
+      --badge-text: #f0a050;
+      --copy-bg: #2e2e2e;
+      --copy-hover: #3a3a3a;
       --copy-success: #064e3b;
       --copy-success-text: #6ee7b7;
       --shadow: 0 4px 20px rgba(0,0,0,0.5);
@@ -154,7 +156,7 @@ const SHADOW_CSS = `
   .pair-eq { color: var(--text-muted); flex-shrink: 0; }
   .pair-id {
     font-family: 'SFMono-Regular', Consolas, monospace;
-    color: var(--accent);
+    color: var(--accent-green);
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;

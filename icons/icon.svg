@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <!-- Hat brim -->
-  <ellipse cx="64" cy="95" rx="60" ry="14" fill="#4f46e5"/>
+  <ellipse cx="64" cy="95" rx="60" ry="14" fill="#2B5219"/>
 
   <!-- Hat crown -->
-  <path d="M22 93 C24 93 30 28 64 28 C98 28 104 93 106 93 Z" fill="#4f46e5"/>
+  <path d="M22 93 C24 93 30 28 64 28 C98 28 104 93 106 93 Z" fill="#2B5219"/>
 
   <!-- Crown crease lines (white, subtle) -->
   <path d="M50 30 C48 46 48 60 51 72" stroke="white" stroke-width="3" fill="none"
@@ -21,5 +21,5 @@
   <!-- Hat band (white) — drawn after ? so buckle sits on top cleanly -->
   <rect x="24" y="84" width="80" height="11" rx="2" fill="white"/>
   <rect x="57" y="85" width="14" height="9" rx="2" fill="white"/>
-  <rect x="60" y="87.5" width="8" height="4" rx="1" fill="#4f46e5"/>
+  <rect x="60" y="87.5" width="8" height="4" rx="1" fill="#C4622D"/>
 </svg>

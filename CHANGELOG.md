@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-06-30 — National Park Service color theme
+
+### Changed
+- Recolored icon: hat crown and brim updated from indigo to NPS deep green (`#2B5219`); hat band buckle updated to NPS orange (`#C4622D`). PNG icons regenerated at all three sizes.
+- Toolbar badge background color updated from purple to NPS orange (`#c4622d`).
+- Popup and in-page overlay palette overhauled: surfaces and borders neutralized to gray (no green tint in backgrounds); NPS orange (`#c4622d`) is the primary accent for the floating pill, source-type badges, and toolbar badge; NPS green (`#2b5219`) is a secondary accent for parameter value text and the Copy All button. Dark mode bases changed from dark purple/blue to near-black gray (`#1c1c1c` / `#262626`).
+- Copy All button now uses NPS green background with white text; hover shows a subtle green glow ring instead of a background shift; success state restores to correct appearance.
+
+### Fixed
+- Copy All button success flash now shows a check icon alongside "Copied!" text instead of collapsing to an icon-only green blob. `copyText` preserves the original button HTML and restores it after the timeout.
+
 ## 2026-06-30 — Accessible accent color palette matched to icon
 
 ### Changed

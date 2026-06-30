@@ -15,13 +15,16 @@ function pairToString(pair) {
   return `${pair.resource}=${pair.id}`;
 }
 
-async function copyText(text, btn) {
+async function copyText(text, btn, successLabel = null) {
   try {
     await navigator.clipboard.writeText(text);
-    btn.innerHTML = CHECK_ICON;
+    const original = btn.innerHTML;
+    btn.innerHTML = successLabel
+      ? CHECK_ICON + `<span>${successLabel}</span>`
+      : CHECK_ICON;
     btn.classList.add('success');
     setTimeout(() => {
-      btn.innerHTML = COPY_ICON;
+      btn.innerHTML = original;
       btn.classList.remove('success');
     }, 1500);
   } catch {
@@ -99,7 +102,7 @@ function renderPairs(pairs, url) {
 
   copyAllBtn.addEventListener('click', () => {
     const text = pairs.map(pairToString).join('\n');
-    copyText(text, copyAllBtn);
+    copyText(text, copyAllBtn, 'Copied!');
   });
 }
 

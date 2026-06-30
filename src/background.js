@@ -19,7 +19,7 @@ async function processTab(tabId, url) {
 
   if (pairs.length > 0) {
     await chrome.action.setBadgeText({ text: String(pairs.length), tabId });
-    await chrome.action.setBadgeBackgroundColor({ color: '#6b3492', tabId });
+    await chrome.action.setBadgeBackgroundColor({ color: '#c4622d', tabId });
   } else {
     await chrome.action.setBadgeText({ text: '', tabId });
   }
