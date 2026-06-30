@@ -1,0 +1,9 @@
+/* Minimal host-page styles — the overlay itself is isolated in Shadow DOM */
+#param-scout-host {
+  all: initial;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

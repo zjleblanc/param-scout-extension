@@ -1,0 +1,10 @@
+{
+  "name": "param-scout-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to extract resource/ID pairs from REST-style URLs",
+  "private": true,
+  "scripts": {
+    "build": "scripts/build.sh",
+    "clean": "rm -rf dist"
+  }
+}

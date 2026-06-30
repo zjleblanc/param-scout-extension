@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Param Scout</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <div class="header-brand">
+      <img src="../icons/icon128.png" class="logo" alt="" aria-hidden="true" />
+      <h1>Param Scout</h1>
+    </div>
+    <div class="header-controls">
+      <span id="url-pill" class="url-pill" title=""></span>
+      <button id="copy-all-btn" title="Copy all pairs" hidden>
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="12" height="12" aria-hidden="true">
+          <rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M3 11H2.5A1.5 1.5 0 0 1 1 9.5v-7A1.5 1.5 0 0 1 2.5 1h7A1.5 1.5 0 0 1 11 2.5V3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        Copy all
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="empty-state" hidden>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M20 20L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M9 11h4M11 9v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <p>No params or IDs detected<br/>in the current URL.</p>
+    </div>
+    <ul id="pairs-list" hidden></ul>
+  </main>
+
+  <footer id="footer" hidden>
+    <span id="pair-count"></span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
