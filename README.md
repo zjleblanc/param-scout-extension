@@ -1,4 +1,4 @@
-# Param Scout
+# <img src="icons/icon128.png" alt="Param Scout" width="32" height="32" align="top"> Param Scout
 
 A lightweight Chrome extension that automatically surfaces path IDs and query parameters from any URL, displaying them in a non-invasive badge, popup, and in-page overlay. Works with REST APIs, ServiceNow, and any other URL-based application.
 
